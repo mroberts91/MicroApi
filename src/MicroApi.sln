@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroApi", "MicroApi\MicroA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman", "Postman", "{55DEBE40-0345-4118-A25F-D4FCC5D3F5B4}"
 	ProjectSection(SolutionItems) = preProject
-		Postman\MicroAPI.postman_collection.json = Postman\MicroAPI.postman_collection.json
+		..\test\Postman\MicroAPI.postman_collection.json = ..\test\Postman\MicroAPI.postman_collection.json
 	EndProjectSection
 EndProject
 Global
