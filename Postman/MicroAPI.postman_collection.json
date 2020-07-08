@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "2b439029-03e4-4dbf-a6ef-60ffc4b78d75",
+		"name": "MicroAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetTodo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5011/todos/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5011",
+					"path": [
+						"todos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostTodo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"items\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5011/todos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5011",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutTodo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 2,\r\n    \"Items\": [\r\n        {\r\n            \"Title\": \"Pay Electric Bill\",\r\n            \"Description\": \"Need to pay the bill.\"\r\n        },\r\n        {\r\n            \"Title\": \"Car Wash\",\r\n            \"Description\": \"Need to wash the car.\"\r\n        },\r\n        {\r\n            \"Title\": \"Become Better\",\r\n            \"Description\": \"Learn how to code.\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5011/todos/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5011",
+					"path": [
+						"todos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTodo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5011/todos/2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5011",
+					"path": [
+						"todos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTodos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:5011/todos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5011",
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
