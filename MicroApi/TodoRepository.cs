@@ -97,7 +97,13 @@ namespace MicroApi.Data
 
     public record TodoItem
     {
-        public string? Title { get; set; }
-        public string? Description { get; set; }
+        public string? Title { get; init; }
+        public string? Description { get; init; }
     }
+}
+
+// Current bug in .NET 5 preview. Required for init only properties.
+namespace System.Runtime.CompilerServices
+{
+    public class IsExternalInit { }
 }
