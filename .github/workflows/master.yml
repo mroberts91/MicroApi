@@ -1,4 +1,4 @@
-name: .NET Core
+name: Master Brach .Net 5
 
 on:
   push:
