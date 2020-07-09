@@ -1,4 +1,4 @@
-name: Master Brach .Net 5
+name: Master .Net 5 Build
 
 on:
   push:
